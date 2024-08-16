@@ -1,0 +1,221 @@
+/* Main container styling */
+.eyeglass-page {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Navigation bar styling */
+.navbar1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #050505;
+  color: #ffffff;
+  z-index: 10;
+  width: calc(100% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: flex-end;
+}
+
+.navbar1 .nav-button {
+  border: 1px solid #ffffff;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navbar1 .nav-button:hover {
+  background-color: #0be498;
+  color: #ffffff;
+}
+
+/* Filters section styling */
+.filters {
+  width: 190px; /* Increased width for better layout */
+  padding: 20px; /* Increased padding for better spacing */
+  background-color: #ffffff; /* Changed to white for a clean look */
+  border-right: 1px solid #dddddd;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 20;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.filters h2 {
+  margin-top: 0;
+  font-size: 22px; /* Increased font size */
+  color: #333333; /* Darker text color for better readability */
+  border-bottom: 2px solid #0d7752; /* Added border for emphasis */
+  padding-bottom: 10px; /* Added padding for spacing */
+}
+
+.filter-group {
+  /* Increased margin for better spacing */
+  margin-bottom: 20px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px; /* Increased margin for separation */
+}
+
+.filter-option input[type="checkbox"] {
+  margin-right: 10px; /* Increased margin for better alignment */
+}
+
+.filter-option label {
+  cursor: pointer;
+  font-size: 16px; /* Adjusted font size */
+  color: #333333; /* Darker text color for readability */
+}
+
+/* Reset button styling */
+.reset {
+  background-color: transparent;
+  border: 2px solid #0d7752;
+  color: #0d7752;
+  padding: 10px 16px; /* Increased padding */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px; /* Adjusted font size */
+  font-weight: bold; /* Bold font for emphasis */
+  border-radius: 4px; /* Added border-radius for rounded corners */
+}
+
+.reset:hover {
+  background-color: #0d7752;
+  color: #ffffff;
+}
+
+/* Product list section styling */
+.products {
+  flex: 1;
+  padding: 20px; /* Increased padding for better layout */
+  margin-left: 220px; /* Adjusted space for the fixed filters */
+  margin-top: 60px; /* Increased top margin to match navigation bar height */
+  overflow-y: auto;
+  background-color: #000000;
+}
+
+/* Product header styling */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Increased margin for separation */
+  padding-top: 20px; /* Added top padding */
+ 
+}
+.product-header h2 {
+  margin: 0;
+  font-size: 32px; /* Increased font size */
+  color:white; /* Darker text color */
+}
+
+/* Toggle fit button styling */
+.toggle-fit {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px; /* Increased padding for better appearance */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px; /* Added border-radius for rounded corners */
+  font-size: 16px; /* Adjusted font size */
+}
+
+.toggle-fit:hover {
+  background-color: #333333;
+}
+
+/* Product grid styling */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+  gap: 15px; /* Increased gap for better spacing */
+  max-width: 100%;
+  box-sizing: border-box;
+  transform: scale(1); /* Default scaling */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Product card styling */
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 16px; /* Increased padding for better content layout */
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  width: 100%; /* Adjusted width */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 18px; /* Increased font size */
+  color: #333333; /* Darker text color */
+}
+
+.product-card p {
+  margin: 6px 0;
+  font-size: 16px; /* Increased font size */
+  color: #666666; /* Slightly lighter text color */
+}
+
+/* Zoom effect on hover */
+.product-card:hover {
+  transform: scale(1.05); /* Slightly zoom in */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow to highlight */
+}
+
+/* Wishlist button styling */
+.wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Adjusted position to align better */
+  background: none;
+  border: 1px solid white; /* Outline in white color */
+  border-radius: 50%; /* Make the button round */
+  width: 36px; /* Adjusted width for better appearance */
+  height: 36px; /* Adjusted height for better appearance */
+  font-size: 24px; /* Increased font size for better visibility */
+  color: white; /* Default color */
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+/* Heart color change on hover */
+.wishlist:hover {
+  background-color: rgba(255, 0, 0, 0.1); /* Light background color on hover */
+}
+
+/* Active heart styling (when added to wishlist) */
+.wishlist.active {
+  color: red; /* Red color when active */
+}

@@ -1,0 +1,141 @@
+/* Define brown shadow color */
+:root {
+    --brown-shadow: rgba(70, 8, 8, 0.5); /* Adjust the color and opacity as needed */
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbarinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(139, 38, 38, 0.1);
+  }
+  
+  .back-button {
+    background-color: #281e10;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .back-button:hover {
+    background-color: #d48f10;
+  }
+  
+  .product-info-container0 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .product-details0 {
+    display: flex;
+    max-width: 1200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .product-images0 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .main-image0 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px var(--brown-shadow); /* Apply brown shadow */
+  }
+  
+  .thumbnail-images {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .thumbnail-image {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 10px var(--brown-shadow); /* Apply brown shadow */
+  }
+  
+  .thumbnail-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .product-info0 {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .product-info0 h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .product-info0 p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .product-info0 h2 {
+    margin: 20px 0;
+    font-size: 20px;
+    color: rgb(203, 29, 29);
+  }
+  
+  .promotion {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .color-circle.selected {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .promotion {
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }

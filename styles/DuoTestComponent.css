@@ -1,0 +1,97 @@
+/* src/styles/DuoTestComponent.css */
+.duochrome-test1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  background-color: #fff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Center text inside .duochrome-test1 */
+  position: relative; /* Ensure relative positioning for absolute children */
+  overflow: hidden; /* Hide overflow to prevent white space */
+}
+
+.duochrome-test1 h1,
+.duochrome-test1 h2,
+.duochrome-test1 h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.duochrome-test1 h1 {
+  font-size: 2.5rem; /* Increased size for emphasis */
+  color: #282c34;
+  margin-bottom: 1rem;
+}
+
+.duochrome-test1 h2 {
+  font-size: 2rem; /* Adjusted for better hierarchy */
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.duochrome-test1 h3 {
+  font-size: 1.5rem; /* Increased size for better readability */
+  color: #0be498;
+  margin-bottom: 1rem;
+}
+
+.duochrome-test1 p {
+  font-size: 1.1rem; /* Slightly larger for improved readability */
+  color: #666;
+  margin-bottom: 1.5rem; /* Increased spacing for better separation */
+}
+
+.test-area1 {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensure full width for the test area */
+  max-width: 600px; /* Limit max width for better content control */
+  margin-bottom: 2rem; /* Space between image and buttons */
+}
+
+.test-image1 {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd; /* Slightly thicker border */
+  border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.test-buttons1 {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Increased gap for better button spacing */
+  margin-top: 2rem; /* Increased margin for better spacing */
+}
+
+.test-buttons1 button {
+  padding: 0.75rem 1.5rem; /* Increased padding for larger click area */
+  border: none;
+  border-radius: 6px; /* Rounded corners for a modern look */
+  background-color: #0d7752;
+  color: white;
+  font-size: 1.1rem; /* Slightly larger font size for readability */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.test-buttons1 button:hover {
+  background-color: #0be498;
+  transform: scale(1.05);
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.slide-left {
+  animation: slideLeft 0.5s ease-out forwards; /* Faster animation */
+}

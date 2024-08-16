@@ -1,0 +1,87 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content1 {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  z-index: 1001; /* Ensure the modal content is on top */
+}
+.closeh2{
+  color:#000;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #aaa;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 15px 0; /* Increase margin to avoid dropdown interference */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1003;
+}
+
+form button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 20px; /* Further increase margin above the button */
+  background-color:#0d7752;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1004; /* Ensure button is on top */
+}
+
+form button:hover {
+  background-color: #0be498;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+  z-index: 1005;
+}
+
+a {
+  color: #0d7752;
+  cursor: pointer;
+  z-index: 1006;
+}
+
+a:hover {
+  text-decoration: underline;
+}

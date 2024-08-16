@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #282c34; /* Light brown background */
+    color: white; /* White text color */
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white; /* White text color */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.app-links {
+    display: flex;
+    align-items: center;
+}
+
+.app-links a {
+    margin: 0 10px;
+}
+
+.app-links img {
+    width: 120px;
+    height: 40px;
+}
+
+.app-links img.apple {
+    width: 140px; /* Slightly larger Apple logo */
+    height: 45px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-links {
+    text-align: left;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px; /* Increased size */
+    height: 40px;
+    border-radius: 50%; /* Make the logos round */
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 10px;
+    color: white; /* White text color */
+}

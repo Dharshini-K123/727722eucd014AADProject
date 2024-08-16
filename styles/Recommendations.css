@@ -1,0 +1,79 @@
+.recommendations {
+    background-color: black;
+    padding: 20px;
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    width: 1430px;
+  }
+  
+  .recommendations h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .recommendations-content {
+    display: flex;
+    gap: 15px;
+    animation: scroll 30s linear infinite; /* Adjust duration for scroll speed */
+  }
+  
+  .recommendation-item {
+    position: relative;
+    display: inline-block;
+    text-align: center; /* Center align text below image */
+    color: white;
+  }
+  
+  .recommendation-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px; /* Optional rounded corners */
+  }
+  
+  .recommendation-info {
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .recommendation-info h2 {
+    font-size: 16px;
+    margin: 5px 0;
+    color: white;
+  }
+  
+  .recommendation-info p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .like-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .like-button.liked {
+    color: red; /* Change color when liked */
+  }
+  
+  .like-button:hover {
+    color: red; /* Hover effect for the like button */
+  }
+  
+  /* Keyframes for continuous scrolling */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Change percentage based on the number of images */
+    }
+  }
+  

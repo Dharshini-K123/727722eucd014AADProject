@@ -1,0 +1,115 @@
+.service-page {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  .location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3px;
+    padding-right: 5px;
+    background-color:#282c34;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .location-header .logo {
+    font-size: 2rem;
+  font-weight: bold;
+  color: #0be498;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li {
+    margin-right: 1rem;
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    background-color: #0d7752;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: #0be498;
+    color: white;
+  }
+  
+  .left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 4rem; /* Adjust for fixed header height */
+  }
+  
+  .service-title {
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    color: #2c1915;
+    margin-bottom: 1rem;
+  }
+  
+  .service-description {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info {
+   text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info a {
+    color: #2c1915;
+    text-decoration: none;
+  }
+  
+  .need-service-button {
+    align-self: flex-start;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d7752;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, border-color 0.3s;
+  }
+  
+  .need-service-button:hover {
+    background-color: #0be498;
+    transform: scale(1.05);
+  }
+  
+  .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 4rem; /* Adjust for fixed header height */
+  }
+  
+  iframe {
+    width: 100%;
+    height: 600px;
+    border: 0;
+  }

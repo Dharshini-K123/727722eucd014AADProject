@@ -1,0 +1,202 @@
+.confirm-order-page {
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  height: 750px;
+}
+
+.confirm-order-box {
+  background-color: #000000;
+  color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid white;
+}
+.confirm-order-box h2{
+  color:#fff;
+}
+.confirm-product-cards {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.confirm-product-card {
+  background-color: #000000;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+}
+
+.confirm-product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 100px;
+}
+
+.confirm-product-details {
+  font-size: 14px;
+}
+
+.confirm-view-button {
+  margin-top: 10px;
+  background-color:  #0d7752;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.confirm-delivery-details {
+  margin: 20px 0;
+}
+
+.confirm-delivery-date {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.confirm-track-button {
+  background-color:  #0d7752;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.confirm-track-button:hover {
+  background-color:  #0be498;
+}
+
+.confirm-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border-bottom:1px solid white ;
+}
+
+.confirm-nav-left h1 {
+  margin: 0;
+  padding: 0;
+  color:  #0be498; /* Title color */
+}
+
+.confirm-nav-right button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #0d7752;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-home-button:hover,
+.confirm-review-button:hover,
+.confirm-continue-shopping-button:hover {
+  background-color:  #000000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  text-align: center;
+ 
+}
+.modal-content h2{
+color: white;
+}
+.tracking-info {
+  position: relative;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.tracking-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+ 
+}
+
+.tracking-step {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px; /* Adjust spacing between steps */
+}
+
+.tracking-dot {
+  width: 15px;
+  height: 15px;
+  background-color:  #0d7752;
+  border-radius: 50%;
+  margin-right: 15px; /* Space between dot and content */
+  z-index: 1;
+}
+
+.tracking-content {
+  text-align: left; /* Align text to the left */
+  position: relative;
+}
+
+.tracking-detail {
+  margin: 5px 0;
+}
+
+.tracking-date {
+  font-weight: bold;
+}
+
+.tracking-city {
+  color: #555;
+}
+
+.modal-close-button {
+  background-color: rgb(68, 0, 0); /* Close button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.modal-close-button:hover {
+  background-color: #0be498; /* Hover color for close button */
+}
